@@ -59,6 +59,21 @@
     }
     document.getElementById('bai8').innerHTML = "thang nay la: " + thang;
  }
+
+ function bai3() {
+    var f = document.getElementById("three").value;
+    var n = parseInt(f);
+    while (n >= 10) {
+       var donvi = n % 10;
+       n = n / 10;
+       if (donvi > n % 10) {
+          return document.getElementById('bai3').innerHTML = f + " là số tăng từ trái sang phải";
+       }
+       return document.getElementById('bai3').innerHTML = f + " là số không tăng từ trái sang phải";
+    }
+ }
+ bai3();
+
  function bai4() {
     var str = document.getElementById("four").value;
     var strArr = str.split("");
